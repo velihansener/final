@@ -1,0 +1,42 @@
+<html>
+    <title>
+        Kayit Ol
+    </title>
+
+    <body>
+        <a href= "http://localhost:8080">Ana Sayfa</a>
+        <a href="http://localhost:8080/giris">Giriş Yap</a>
+        <a href="http://localhost:8080/kayit">Kayıt Ol</a>
+        
+        <p>
+            Kayıt Ol
+        </p>
+
+        <h3>Sepet Kayıt Ekranı</h3>
+        <form action="/kayit"  method="post">
+            E-mail: <input type="email" id="myEmail" value="john@example.com"> <br>
+            Şifre: <input type="sifre" id="sifrem" value="Aa1234"> <br>
+            Pin: <input type="pin" id="pinkod" value="1234"> <br>
+
+        <button onclick="kayitOl()">Kayıt Ol</button>
+        </form>
+        <p id="demo"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+
+        <script>
+        function kayitOl() {
+            var x = document.getElementById("myEmail").value;
+            document.getElementById("demo").innerHTML = x;
+
+            var y = document.getElementById("sifrem").value;
+            document.getElementById("demo2").innerHTML = y;
+
+            var z = document.getElementById("pin").value;
+            document.getElementById("demo3").innerHTML = z;
+        }
+        </script>
+
+    </body>
+
+</html>
